@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Cadastrar Usuário</h2>
+    <form [formGroup]="cadastroForm" (ngSubmit)="cadastrar()">
+        <label for="nome">Nome</label>
+        <input id="nome" formControlName="nome" placeholder="Nome" type="text">
+
+        <label for="cargo">Cargo</label>
+        <input id="cargo" formControlName="cargo" placeholder="Cargo" type="text">
+
+        <label for="planta">Planta</label>
+        <input id="planta" formControlName="planta" placeholder="Planta" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" placeholder="Email" type="email">
+
+        <label for="tipoTrabalho">Tipo de Trabalho</label>
+        <select id="tipoTrabalho" formControlName="tipoTrabalho">
+            <option value="">Selecione o Tipo de Trabalho</option>
+            <option value="remoto">Remoto</option>
+            <option value="presencial">Presencial</option>
+            <option value="hibrido">Híbrido</option>
+        </select>
+
+        <button type="submit" [disabled]="!cadastroForm.valid">Confirmar</button>
+    </form>
+</div>

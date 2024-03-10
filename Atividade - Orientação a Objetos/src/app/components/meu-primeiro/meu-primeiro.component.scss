@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+form {
+    [formControlName], // Seletor para todos os elementos com o atributo formControlName
+    button {            // Seletor para o botão
+      display: block;
+      margin-bottom: 15px; // Espaço opcional entre os elementos
+    }
+}
+
+label {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; // Extra light
+    margin-bottom: 10px;
+}
+
+input{
+    width: 200px;
+}
+
+input, select {
+    background-color: #e8e8e8;
+    font-family: 'Inter', sans-serif;
+    padding: 10px; // Espaçamento interno para os campos de entrada
+    border: 1px solid #ccc; // Borda com cor cinza claro
+    border-radius: 5px; // Bordas arredondadas
+}
+
+button {
+    margin: 30px 0px 30px 0px;
+    font-family: 'Inter', sans-serif;
+    background-color: #007BFF; // Esta é uma cor azul genérica, ajuste conforme necessário
+    color: #ffffff; // Cor do texto branco para contraste
+    border: none; // Sem borda
+    border-radius: 5px; // Cantos arredondados
+    padding: 10px 20px; // Espaçamento interno, ajuste conforme necessário
+    font-weight: bold; // Texto em negrito
+    font-family: 'Inter', sans-serif; // Usando a família de fontes Inter, conforme mencionado anteriormente
+    font-size: 14px; // Tamanho da fonte, ajuste conforme necessário
+    text-align: center; // Centralizar o texto dentro do botão
+    cursor: pointer; // Cursor do mouse como ponteiro para indicar que é clicável
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra sutil
+    transition: background-color 0.3s, box-shadow 0.3s; // Transição suave para hover
+}  
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container {
+    display: flex; // Ativa o Flexbox
+    flex-direction: column; // Organiza os itens em uma coluna
+    align-items: center; // Centraliza horizontalmente os itens no container
+    justify-content: center;
+}
